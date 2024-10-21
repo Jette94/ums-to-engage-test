@@ -31,13 +31,15 @@
           "Alias": "tvShowID",
           "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
           "Mandatory": true,
-          "Name": "Tv Show ID"
+          "Name": "Tv Show ID",
+          "SortOrder": 1
         },
         {
           "Key": "709d43fc-d9d9-4eff-80f7-65f09e0d48de",
           "Alias": "thumbnail",
           "DataType": "umb://data-type/1a42e879f45541ee80480ba3dd10d4d4",
-          "Name": "Thumbnail"
+          "Name": "Thumbnail",
+          "SortOrder": 2
         }
       ]
     }
