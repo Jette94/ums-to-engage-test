@@ -27,7 +27,7 @@ public class TvMazeUtility
 	private readonly IVariationContextAccessor _variationContextAccessor;
 
 	Dictionary<string, string> Descriptions = new() {
-		{ "en", "was a great TV Show" },
+		{ "en-US", "was a great TV Show" },
 		{ "da", "som et godt tv-program" },
 		{ "nl", "was een geweldige tv-show" }
 	 };
