@@ -7,3 +7,8 @@
 	var uniqueShows = allTvShows.Select(tvs => tvs as TVshowPage).GroupBy(t => t.TvShowID).Count();
 }
 <h1>@uniqueShows of @allTvShows.Count()</h1>
+
+@foreach(var show in allTvShows)
+{
+    <a href="@show.Url">@show.Name</a><br>
+}
