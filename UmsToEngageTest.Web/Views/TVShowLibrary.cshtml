@@ -1,6 +1,9 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.TVshowLibrary>
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+
 @{
-	Layout = null;
+	var allTvShows = @Model.Children();
+	var uniqueShows = allTvShows.Select(tvs => tvs as TVshowPage).GroupBy(t => t.TvShowID).Count();
 }
+<h1>@uniqueShows of @allTvShows.Count()</h1>
