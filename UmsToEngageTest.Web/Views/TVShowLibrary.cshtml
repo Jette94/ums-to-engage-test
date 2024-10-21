@@ -10,5 +10,6 @@
 
 @foreach(var show in allTvShows)
 {
-    <a href="@show.Url">@show.Name</a><br>
+    <a href="@show.Url()">@show.Name</a>
+    <br>
 }
