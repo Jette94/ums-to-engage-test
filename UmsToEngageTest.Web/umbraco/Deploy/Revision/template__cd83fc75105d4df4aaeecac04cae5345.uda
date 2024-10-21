@@ -1,0 +1,14 @@
+{
+  "Name": "TV show Page",
+  "Alias": "TVShowPage",
+  "File": "umb://template-file/TVShowPage.cshtml",
+  "Udi": "umb://template/cd83fc75105d4df4aaeecac04cae5345",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/TVShowPage.cshtml",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "13.2.2"
+}

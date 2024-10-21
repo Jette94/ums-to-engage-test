@@ -1,3 +1,6 @@
+using Hangfire;
+using UmsToEngageTest.Web;
+
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.CreateUmbracoBuilder()
@@ -5,9 +8,14 @@ builder.CreateUmbracoBuilder()
     .AddWebsite()
     .AddDeliveryApi()
     .AddComposers()
-    .Build();
-
+.Build();
 WebApplication app = builder.Build();
+
+if (builder.Environment.IsProduction())
+{
+	RecurringJob.AddOrUpdate<TvMazeUtility>("MoveOneTvShowFromTvMazeToUmbraco", x => x.MoveTvShowsFromTvMazeToUmbraco(), Cron.Monthly);
+
+}
 
 await app.BootUmbracoAsync();
 

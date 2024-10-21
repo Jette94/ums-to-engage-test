@@ -1,0 +1,16 @@
+{
+  "Name": "TV show Page - Thumbnail - Media Picker",
+  "Alias": "",
+  "EditorAlias": "Umbraco.MediaPicker3",
+  "Configuration": {
+    "multiple": false,
+    "validationLimit": {},
+    "enableLocalFocalPoint": false,
+    "crops": [],
+    "ignoreUserStartNodes": false
+  },
+  "Udi": "umb://data-type/1a42e879f45541ee80480ba3dd10d4d4",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.2.2"
+}

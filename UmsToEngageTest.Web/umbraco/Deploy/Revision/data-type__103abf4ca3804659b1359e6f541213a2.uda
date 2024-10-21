@@ -1,0 +1,38 @@
+{
+  "Name": "TV show Page - Description - Rich Text Editor",
+  "Alias": "",
+  "EditorAlias": "Umbraco.TinyMCE",
+  "Configuration": {
+    "editor": {
+      "toolbar": [
+        "ace",
+        "styles",
+        "bold",
+        "italic",
+        "alignleft",
+        "aligncenter",
+        "alignright",
+        "bullist",
+        "numlist",
+        "outdent",
+        "indent",
+        "link",
+        "umbmediapicker",
+        "umbmacro",
+        "umbembeddialog"
+      ],
+      "stylesheets": [],
+      "maxImageSize": 500,
+      "mode": "classic"
+    },
+    "blocks": [],
+    "useLiveEditing": false,
+    "overlaySize": "small",
+    "hideLabel": false,
+    "ignoreUserStartNodes": false
+  },
+  "Udi": "umb://data-type/103abf4ca3804659b1359e6f541213a2",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.2.2"
+}

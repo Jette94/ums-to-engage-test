@@ -1,0 +1,67 @@
+{
+  "Name": "TV show Page",
+  "Alias": "tVShowPage",
+  "DefaultTemplate": "umb://template/cd83fc75105d4df4aaeecac04cae5345",
+  "AllowedTemplates": [
+    "umb://template/cd83fc75105d4df4aaeecac04cae5345"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-fullscreen color-indigo",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowVaryingByCulture": true,
+    "AllowedChildContentTypes": []
+  },
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "5d604555-d109-4c5c-8122-973e3c6f34a8",
+      "Name": "Content",
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "2fcd1790-3e05-4a6f-8c42-0687bdc9610a",
+          "Alias": "description",
+          "DataType": "umb://data-type/103abf4ca3804659b1359e6f541213a2",
+          "Name": "Description",
+          "VariesByCulture": true
+        },
+        {
+          "Key": "340fb07e-b103-4b1d-b5c4-18e70c132b7b",
+          "Alias": "tvShowID",
+          "DataType": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+          "Mandatory": true,
+          "Name": "Tv Show ID"
+        },
+        {
+          "Key": "709d43fc-d9d9-4eff-80f7-65f09e0d48de",
+          "Alias": "thumbnail",
+          "DataType": "umb://data-type/1a42e879f45541ee80480ba3dd10d4d4",
+          "Name": "Thumbnail"
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/e9e6ed9d2e3d457295c8f738b2d7bf02",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/103abf4ca3804659b1359e6f541213a2",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/1a42e879f45541ee80480ba3dd10d4d4",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://template/cd83fc75105d4df4aaeecac04cae5345",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.2.2"
+}
