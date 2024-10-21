@@ -8,6 +8,7 @@
   "HistoryCleanup": {},
   "Icon": "icon-fullscreen color-indigo",
   "Thumbnail": "folder.png",
+  "Description": "TV Show Page Meaningful",
   "Permissions": {
     "AllowVaryingByCulture": true,
     "AllowedChildContentTypes": []
