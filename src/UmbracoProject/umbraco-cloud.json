@@ -1,7 +1,17 @@
 {
   "Deploy": {
     "Project": {
-      "Workspaces": []
+      "Name": "ums to engage test",
+      "Alias": "ums-to-engage-test",
+      "Id": "55c47970-5e15-4764-afeb-17a954716a19",
+      "Workspaces": [
+        {
+          "Id": "5acffb5b-1800-4be4-92ca-92f3a5027dab",
+          "Name": "Live",
+          "Type": "live",
+          "Url": "https://ums-to-engage-test.euwest01.umbraco.io"
+        }
+      ]
     },
     "Settings": {}
   },
