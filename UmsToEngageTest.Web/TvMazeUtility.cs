@@ -84,22 +84,12 @@ public class TvMazeUtility
 		{
 			var TvshowLibrary = umbracoContextReference.UmbracoContext.Content.GetById(_contentService.GetRootContent().First().Id) as TVshowLibrary;
 			TVshowPage existingTvShowInUmbraco = null;
-			var existingTvShowsInUmbraco = TvshowLibrary.Children<TVshowPage>(_variationContextAccessor).Where(t => t.TvShowID == show.Id.ToString());
+			var existingTvShowsInUmbraco = TvshowLibrary.Children<TVshowPage>().Where(t => t.TvShowID == show.Id.ToString());
 
 			if (existingTvShowsInUmbraco?.Any() ?? false)
 			{
-				if (existingTvShowsInUmbraco.Count() > 0)
-				{
-					existingTvShowInUmbraco = existingTvShowsInUmbraco.OrderBy(t => t.CreateDate).First();
-					foreach (var showToDelete in existingTvShowsInUmbraco.Where(s => s.Id != existingTvShowInUmbraco.Id))
-					{
-						_contentService.Delete(_contentService.GetById(showToDelete.Id));
-					}
-				}
-				else
-				{
-					existingTvShowInUmbraco = existingTvShowsInUmbraco.FirstOrDefault();
-				}
+				_logger.LogInformation($"{show.Name} {string.Join(", ", existingTvShowsInUmbraco.Select(t => t.Id))} show {show.Id}");
+				return false;
 			}
 
 			if (existingTvShowInUmbraco == null)
