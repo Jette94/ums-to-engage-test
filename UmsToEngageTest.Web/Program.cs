@@ -13,7 +13,7 @@ WebApplication app = builder.Build();
 
 if (builder.Environment.IsProduction())
 {
-	RecurringJob.AddOrUpdate<TvMazeUtility>("MoveOneTvShowFromTvMazeToUmbraco", x => x.MoveTvShowsFromTvMazeToUmbraco(), Cron.Monthly);
+	// RecurringJob.AddOrUpdate<TvMazeUtility>("MoveOneTvShowFromTvMazeToUmbraco", x => x.MoveTvShowsFromTvMazeToUmbraco(), Cron.Monthly);
 
 }
 
